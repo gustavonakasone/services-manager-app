@@ -12,7 +12,7 @@
 	<color name="teal_700">#FF018786</color>
 	<color name="black">#FF000000</color>
 	<color name="white">#FFFFFFFF</color>
-
+	<color name="gray">#3B444D</color>
 	<color name="bg_all_color">#0C0F18</color>
 	<color name="rectangle_8_color">#1B242D</color>
 	<color name="buttons">#1B242D</color>
@@ -21,5 +21,9 @@
 	<color name="button_default_color">#6E67F0</color>
 	<color name="button_pressed_color">#5E5AF5</color>
 	<color name="bg_rectangle">#3B444D</color>
+	<color name="selected_item_background">#000000</color>
+	<color name="default_item_background">#1B242D</color>
+    <color name="green">#33cc00</color>
+	<color name="red">#ff3300</color>
 
 </resources>

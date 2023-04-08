@@ -12,8 +12,31 @@
         android:theme="@style/Theme.App_ServicesManager"
         tools:targetApi="31">
         <activity
-            android:name="ui_Activity.OrderManagementActivity"
+            android:name="ui_Activity.ControlUserAccountsActivity"
             android:exported="false"
+            android:label="Services Manager"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.example.myapp.NEW_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ui_Activity.OrderDetailActivity"
+            android:exported="false"
+            android:label="Services Manager"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.example.myapp.NEW_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ui_Activity.ProfileChangeActivity"
+            android:exported="true"
+            android:label="Services Manager"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="com.example.myapp.NEW_ACTIVITY" />
@@ -23,7 +46,8 @@
         </activity>
         <activity
             android:name="ui_Activity.MenuActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="Services Manager">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,6 +56,28 @@
         </activity>
         <activity
             android:name="ui_Activity.AddOrderActivity"
+            android:exported="false"
+            android:label="Services Manager"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.example.myapp.NEW_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ui_Activity.OrderManagementActivity"
+            android:exported="false"
+            android:label="Services Manager"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.example.myapp.NEW_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ui_Activity.PasswordChangeActivity"
             android:exported="false"
             android:label="Services Manager"
             android:windowSoftInputMode="adjustPan">

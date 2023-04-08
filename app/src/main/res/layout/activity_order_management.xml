@@ -17,7 +17,7 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            android:layout_marginTop="-40dp"
+            android:layout_marginTop="-50dp"
             android:src="@mipmap/ic_background_image"
 
             tools:srcCompat="@mipmap/ic_orders_manage_order" />
@@ -28,17 +28,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="-60dp"
+            android:layout_marginTop="-80dp"
             android:layout_marginRight="20dp"
             android:gravity="center"
             android:text="Ordens de Servico"
-            android:textSize="22sp"
+            android:textSize="24sp"
             android:textColor="@color/white" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
             android:gravity="center_horizontal"
             android:orientation="horizontal">
@@ -56,7 +56,7 @@
 
             <!-- TextView para exibir o status do pedido -->
             <TextView
-                android:id="@+id/status_pedido"
+                android:id="@+id/usuario"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -66,14 +66,14 @@
                 android:textColor="@color/white"
                 android:gravity="center"/>
         </LinearLayout>
-        <ListView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/ordemServico"
             android:layout_width="match_parent"
-            android:layout_height="400dp"
+            android:layout_height="0dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:background="#d9d9d9" />
-
+            android:layout_weight="1"
+            android:background="@color/white" />
         <Button
             android:id="@+id/button_finish_order"
             android:layout_width="match_parent"
@@ -81,7 +81,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="15dp"
             android:layout_marginRight="20dp"
-            android:backgroundTint="@color/button_default_color"
+            android:backgroundTint="#4e45ed"
             android:clickable="true"
             android:focusable="true"
             android:onClick="onMyButtonClick"
@@ -102,7 +102,7 @@
             android:text="Observações"
             android:textAllCaps="false"
             android:textSize="18sp"
-            android:backgroundTint="@color/button_default_color"
+            android:backgroundTint="#003380"
             android:onClick="onMyButtonClick"
 
             tools:ignore="TextContrastCheck" />
